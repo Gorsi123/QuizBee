@@ -24,7 +24,7 @@ let StartQuiz = () => {
   let div1 = document.createElement("div");
   const random = Math.floor(Math.random() * 3) + 1;
   if (random == 1) {
-    div.innerHTML = ` <label for="agree" id="agree">${questions[idx].text}</label>
+    div.innerHTML = ` <label for="agree">${questions[idx].text}</label>
 <p class="option">
     <input type="radio" class = "options" name="option"  value="1">${questions[idx].correct}<br></input>
     <input type="radio" class = "options" name="option" value="2">${questions[idx].incorrect[0]}<br></input>
@@ -34,7 +34,7 @@ let StartQuiz = () => {
 <button id="btn_one">Next</button>
 `;
   } else if (random == 2) {
-    div.innerHTML = ` <label for="agree" id="agree">${questions[idx].text}</label>
+    div.innerHTML = ` <label for="agree">${questions[idx].text}</label>
     <p class="option">
         <input type="radio" class = "options" name="option"  value="2">${questions[idx].incorrect[0]}<br></input>
         <input type="radio" class = "options" name="option" value="1">${questions[idx].correct}<br></input>
@@ -44,7 +44,7 @@ let StartQuiz = () => {
     <button id="btn_one">Next</button>
     `;
   } else if (random == 3) {
-    div.innerHTML = ` <label for="agree" id="agree">${questions[idx].text}</label>
+    div.innerHTML = ` <label for="agree">${questions[idx].text}</label>
         <p class="option">
             <input type="radio" class = "options" name="option"  value="2">${questions[idx].incorrect[0]}<br></input>
             <input type="radio" class = "options" name="option" value="3">${questions[idx].incorrect[1]}<br></input>
@@ -54,7 +54,7 @@ let StartQuiz = () => {
         <button id="btn_one">Next</button>
         `;
   } else if (random == 4) {
-    div.innerHTML = ` <label for="agree" id="agree">${questions[idx].text}</label>
+    div.innerHTML = ` <label for="agree">${questions[idx].text}</label>
             <p class="option">
                 <input type="radio" class = "options" name="option"  value="2">${questions[idx].incorrect[0]}</input><br>
                 <input type="radio" class = "options" name="option" value="4">${questions[idx].incorrect[2]}</input><br>
